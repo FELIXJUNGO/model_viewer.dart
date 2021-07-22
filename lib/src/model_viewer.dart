@@ -132,9 +132,9 @@ class _ModelViewerState extends State<ModelViewer> {
       },
       navigationDelegate: (final NavigationRequest navigation) async {
         //print('>>>> ModelViewer wants to load: <${navigation.url}>'); // DEBUG
-        if (!Platform.isAndroid) {
+        /*  if (!Platform.isAndroid) {
           return NavigationDecision.navigate;
-        }
+        } */
         if (!navigation.url.startsWith("intent://")) {
           return NavigationDecision.navigate;
         }
