@@ -62524,7 +62524,7 @@ configuration or device capabilities');
                         this[$arMode] = ARMode.SCENE_VIEWER;
                         break;
                     }
-                    else if (value === 'quick-look' && this.iosSrc &&
+                    else if (value === 'quick-look' && !!this.iosSrc &&
                         this[$canLaunchQuickLook] && IS_AR_QUICKLOOK_CANDIDATE) {
                         this[$arMode] = ARMode.QUICK_LOOK;
                         break;
